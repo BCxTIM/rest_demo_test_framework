@@ -1,0 +1,371 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 61596366,
+              "status": "passed"
+            },
+            "match": {
+              "location": "DBHooks.cleanDb()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Run rest",
+        "description": "",
+        "id": "rest-feature;run-rest",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 748703779,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "get all books",
+            "match": {
+              "location": "RestSteps.getAllBooks()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16327851,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "count of books is 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 18
+                }
+              ],
+              "location": "RestSteps.countOfBooksIsNumber(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 84063197,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "add new book",
+            "match": {
+              "location": "RestSteps.addNewBook(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "author"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "tim",
+                  "moiseev"
+                ],
+                "line": 9
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21198407,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "count of books is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 18
+                }
+              ],
+              "location": "RestSteps.countOfBooksIsNumber(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17408106,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "get book by id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "RestSteps.getBookByid(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19088788,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify that title is tim and author is moiseev for book by id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tim",
+                  "offset": 21
+                },
+                {
+                  "val": "moiseev",
+                  "offset": 39
+                },
+                {
+                  "val": "1",
+                  "offset": 62
+                }
+              ],
+              "location": "RestSteps.verifyBook(String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33694901,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "update book with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 20
+                }
+              ],
+              "location": "RestSteps.updateBookWithId(int,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "author"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "jora",
+                  "hui"
+                ],
+                "line": 15
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30282218,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "get book by id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "RestSteps.getBookByid(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17925568,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify that title is jora and author is hui for book by id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jora",
+                  "offset": 21
+                },
+                {
+                  "val": "hui",
+                  "offset": 40
+                },
+                {
+                  "val": "1",
+                  "offset": 59
+                }
+              ],
+              "location": "RestSteps.verifyBook(String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14076676,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "add new book",
+            "match": {
+              "location": "RestSteps.addNewBook(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "title",
+                  "author"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "bro",
+                  "pon4ik"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11261427,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "verify that title is bro and author is pon4ik for book by id 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bro",
+                  "offset": 21
+                },
+                {
+                  "val": "pon4ik",
+                  "offset": 39
+                },
+                {
+                  "val": "2",
+                  "offset": 61
+                }
+              ],
+              "location": "RestSteps.verifyBook(String,String,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13498916,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "get book by id 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 15
+                }
+              ],
+              "location": "RestSteps.getBookByid(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15701764,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "delete book id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "RestSteps.deleteBookById(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14971330,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "count of books is 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 18
+                }
+              ],
+              "location": "RestSteps.countOfBooksIsNumber(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 286849708,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "book with title bro and author pon4ik is stored in db by id 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "bro",
+                  "offset": 16
+                },
+                {
+                  "val": "pon4ik",
+                  "offset": 31
+                },
+                {
+                  "val": "2",
+                  "offset": 60
+                }
+              ],
+              "location": "DatabaseSteps.bookStoredById(String,String,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Run"
+          }
+        ]
+      }
+    ],
+    "name": "rest feature",
+    "description": "",
+    "id": "rest-feature",
+    "keyword": "Feature",
+    "uri": "book.feature"
+  }
+]
