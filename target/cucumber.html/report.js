@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 61596366,
+  "duration": 67650244,
   "status": "passed"
 });
 formatter.scenario({
@@ -25,17 +25,23 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "line": 5,
+  "comments": [
+    {
+      "line": 5,
+      "value": "#Rest steps"
+    }
+  ],
+  "line": 6,
   "name": "get all books",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "count of books is 0",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "add new book",
   "rows": [
     {
@@ -43,35 +49,35 @@ formatter.step({
         "title",
         "author"
       ],
-      "line": 8
+      "line": 9
     },
     {
       "cells": [
-        "tim",
+        "Google demo",
         "moiseev"
       ],
-      "line": 9
+      "line": 10
     }
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "count of books is 1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "get book by id 1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
-  "name": "verify that title is tim and author is moiseev for book by id 1",
+  "line": 13,
+  "name": "verify that title is Google demo and author is moiseev for book by id 1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "update book with id 1",
   "rows": [
     {
@@ -79,30 +85,30 @@ formatter.step({
         "title",
         "author"
       ],
-      "line": 14
+      "line": 15
     },
     {
       "cells": [
-        "jora",
-        "hui"
+        "Apple",
+        "victor"
       ],
-      "line": 15
+      "line": 16
     }
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 17,
   "name": "get book by id 1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
-  "name": "verify that title is jora and author is hui for book by id 1",
+  "line": 18,
+  "name": "verify that title is Apple and author is victor for book by id 1",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "add new book",
   "rows": [
     {
@@ -110,48 +116,54 @@ formatter.step({
         "title",
         "author"
       ],
-      "line": 19
+      "line": 20
     },
     {
       "cells": [
-        "bro",
+        "Windows",
         "pon4ik"
       ],
-      "line": 20
+      "line": 21
     }
   ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 21,
-  "name": "verify that title is bro and author is pon4ik for book by id 2",
-  "keyword": "And "
-});
-formatter.step({
   "line": 22,
-  "name": "get book by id 2",
+  "name": "verify that title is Windows and author is pon4ik for book by id 2",
   "keyword": "And "
 });
 formatter.step({
   "line": 23,
-  "name": "delete book id 1",
+  "name": "get book by id 2",
   "keyword": "And "
 });
 formatter.step({
   "line": 24,
-  "name": "count of books is 1",
+  "name": "delete book id 1",
   "keyword": "And "
 });
 formatter.step({
   "line": 25,
-  "name": "book with title bro and author pon4ik is stored in db by id 2",
+  "name": "count of books is 1",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 26,
+      "value": "#Database step"
+    }
+  ],
+  "line": 27,
+  "name": "book with title Windows and author pon4ik is stored in db by id 2",
   "keyword": "And "
 });
 formatter.match({
   "location": "RestSteps.getAllBooks()"
 });
 formatter.result({
-  "duration": 748703779,
+  "duration": 1734372220,
   "status": "passed"
 });
 formatter.match({
@@ -164,14 +176,14 @@ formatter.match({
   "location": "RestSteps.countOfBooksIsNumber(int)"
 });
 formatter.result({
-  "duration": 16327851,
+  "duration": 49211919,
   "status": "passed"
 });
 formatter.match({
   "location": "RestSteps.addNewBook(DataTable)"
 });
 formatter.result({
-  "duration": 84063197,
+  "duration": 521313875,
   "status": "passed"
 });
 formatter.match({
@@ -184,7 +196,7 @@ formatter.match({
   "location": "RestSteps.countOfBooksIsNumber(int)"
 });
 formatter.result({
-  "duration": 21198407,
+  "duration": 26460269,
   "status": "passed"
 });
 formatter.match({
@@ -197,28 +209,28 @@ formatter.match({
   "location": "RestSteps.getBookByid(int)"
 });
 formatter.result({
-  "duration": 17408106,
+  "duration": 10306474,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "tim",
+      "val": "Google demo",
       "offset": 21
     },
     {
       "val": "moiseev",
-      "offset": 39
+      "offset": 47
     },
     {
       "val": "1",
-      "offset": 62
+      "offset": 70
     }
   ],
   "location": "RestSteps.verifyBook(String,String,int)"
 });
 formatter.result({
-  "duration": 19088788,
+  "duration": 63175694,
   "status": "passed"
 });
 formatter.match({
@@ -231,7 +243,7 @@ formatter.match({
   "location": "RestSteps.updateBookWithId(int,DataTable)"
 });
 formatter.result({
-  "duration": 33694901,
+  "duration": 46536084,
   "status": "passed"
 });
 formatter.match({
@@ -244,56 +256,56 @@ formatter.match({
   "location": "RestSteps.getBookByid(int)"
 });
 formatter.result({
-  "duration": 30282218,
+  "duration": 12602124,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "jora",
+      "val": "Apple",
       "offset": 21
     },
     {
-      "val": "hui",
-      "offset": 40
+      "val": "victor",
+      "offset": 41
     },
     {
       "val": "1",
-      "offset": 59
+      "offset": 63
     }
   ],
   "location": "RestSteps.verifyBook(String,String,int)"
 });
 formatter.result({
-  "duration": 17925568,
+  "duration": 16075962,
   "status": "passed"
 });
 formatter.match({
   "location": "RestSteps.addNewBook(DataTable)"
 });
 formatter.result({
-  "duration": 14076676,
+  "duration": 47397808,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "bro",
+      "val": "Windows",
       "offset": 21
     },
     {
       "val": "pon4ik",
-      "offset": 39
+      "offset": 43
     },
     {
       "val": "2",
-      "offset": 61
+      "offset": 65
     }
   ],
   "location": "RestSteps.verifyBook(String,String,int)"
 });
 formatter.result({
-  "duration": 11261427,
+  "duration": 27009806,
   "status": "passed"
 });
 formatter.match({
@@ -306,7 +318,7 @@ formatter.match({
   "location": "RestSteps.getBookByid(int)"
 });
 formatter.result({
-  "duration": 13498916,
+  "duration": 16915875,
   "status": "passed"
 });
 formatter.match({
@@ -319,7 +331,7 @@ formatter.match({
   "location": "RestSteps.deleteBookById(int)"
 });
 formatter.result({
-  "duration": 15701764,
+  "duration": 21032478,
   "status": "passed"
 });
 formatter.match({
@@ -332,28 +344,28 @@ formatter.match({
   "location": "RestSteps.countOfBooksIsNumber(int)"
 });
 formatter.result({
-  "duration": 14971330,
+  "duration": 9593146,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "bro",
+      "val": "Windows",
       "offset": 16
     },
     {
       "val": "pon4ik",
-      "offset": 31
+      "offset": 35
     },
     {
       "val": "2",
-      "offset": 60
+      "offset": 64
     }
   ],
   "location": "DatabaseSteps.bookStoredById(String,String,int)"
 });
 formatter.result({
-  "duration": 286849708,
+  "duration": 364612699,
   "status": "passed"
 });
 });

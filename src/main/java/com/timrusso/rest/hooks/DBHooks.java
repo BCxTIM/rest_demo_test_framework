@@ -1,8 +1,8 @@
 package com.timrusso.rest.hooks;
 
+import com.timrusso.rest.utils.DatabaseScripUtils;
 import cucumber.api.java.Before;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.timrusso.rest.utils.DatabaseScripUtils;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
