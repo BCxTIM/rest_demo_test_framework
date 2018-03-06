@@ -17,12 +17,13 @@ Feature: rest feature
     And get book by id 1
     And verify that title is Apple and author is victor for book by id 1
     When add new book
-      | title | author |
-      | Windows  | pon4ik |
+      | title   | author |
+      | Windows | pon4ik |
     And verify that title is Windows and author is pon4ik for book by id 2
     And get book by id 2
     And delete book id 1
     And count of books is 1
+
     #Database step
     And book with title Windows and author pon4ik is stored in db by id 2
 
