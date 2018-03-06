@@ -1,7 +1,7 @@
 Feature: rest feature
 
   @Run
-  Scenario: Run rest
+  Scenario: Rest test
     #Rest steps
     Given get all books
     And count of books is 0
